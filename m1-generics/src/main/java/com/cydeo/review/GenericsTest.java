@@ -62,7 +62,10 @@ public class GenericsTest {
     }
 
     // listenin son elemanını getir
-    public static <I> I getLastItem(List<I> list){
+    // buradaki I herşey olabilir IT yaptım.
+                     // bunu void yapınca da olmaz
+
+    public static <IT> IT getLastItem(List<IT> list){
         return list.get(list.size()-1);
     }
 
