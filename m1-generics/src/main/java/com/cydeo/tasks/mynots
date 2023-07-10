@@ -1,0 +1,44 @@
+
+Question-3:
+Will the following class compile? If not, why?
+   public final class Algorithm {
+        public static <T> T max(T x, T y) {
+            return x > y ? x : y;
+        }
+    }
+ -------
+ compile err because:
+ x>y this number
+ generic except primitive type? => no, generic except only object
+ bu yüzde bir object diğer objectten buyuk diyemeyiz.
+ bu sorunun tek amacı:
+ generic except does not primitive type
+
+ ***************************************************
+
+ QUESTİON-4:
+ Will the following method compile? If not, why?
+ public static void print(List<? extends Number> list) {
+ for (Number n : list)
+ System.out.print(n + " ");
+ System.out.println();
+ ---------
+ bu da compile edecek çünkü:
+ içinde Number var ve extend etmiş Number ları
+ hangi number double,ınteger.....
+
+ ***************************************************
+
+ QUESTİON-5:
+ Given the following classes:
+ class Shape { /* ... */ }
+ class Circle extends Shape { /* ... */ }
+ class Rectangle extends Shape { /* ... */ }
+ class Node<T> { /* ... */ }
+ Will the following code compile? If not, why?
+ Node<Circle> nc = new Node<>();
+ Node<Shape> ns = nc;
+ ---------
+ nc yalnız shape
+
+  ***************************************************

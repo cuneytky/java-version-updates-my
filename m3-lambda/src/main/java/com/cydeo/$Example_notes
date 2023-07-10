@@ -1,0 +1,40 @@
+
+- 2 tane öz olduğundan Apple içind 2 tane tanımladık.
+- color sabit olduğundan enum yaptık
+* Apple tanımlayınca 2 variable için geter -setter-cons çok fazla kod yazmak gerekiyor bunu
+  azaltmak için;
+  - ppm.xml gel
+  - sağ tıkla ve generate
+  - add dependencies
+  - lombok yaz ve project lombok ekle
+  - gelince kırmızı ise yükle-reloaded
+  - file-setting-plugins-install lombok yaz
+  - lombok kurulu değilse kur
+  diğer ayar için:
+  - file-setting-build execution deployement-compiler
+  - annotation processor gir ve enable annotation tıkla apply ve ok.
+
+ - Apple içine gel ve @Getter ile annotation getir ihtiyaç oldukça kullanacaz
+ - şimdi getere-setter-cons-tostrin silebilirsin:)
+ - setter da değişiklik yapmak istersen slip yazmalısın.
+ - lombok kısaca tanımıı budur......
+ * view>tool windows> structure tıklarsan yuklenen yapıları görürüsün
+
+-- Strategy Design Pattern:
+  * What kind of design pattern? can you explain?
+  * do you known Strategy Design Pattern? what is the usage?
+
+  *****************************************************
+question-1
+orange-orangeformatter-orangetest
+
+question-2
+person-gender-checkmember-membertest
+
+****************************************
+
+FunctionalInterface class --Apple yanına.....
+user--- task içine...
+************************************************
+
+getter-setter-tostring yerine==>@Data yazabiliriz
