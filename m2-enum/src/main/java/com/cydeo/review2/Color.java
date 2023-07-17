@@ -1,7 +1,6 @@
 package com.cydeo.review2;
 
 public enum Color implements Printable{
-
     RED("RED"),
     GREEN("GREEN"),
     BLUE("BLUE");
@@ -38,8 +37,5 @@ public enum Color implements Printable{
     };
 
     public abstract void print();
-
-
      */
-
 }

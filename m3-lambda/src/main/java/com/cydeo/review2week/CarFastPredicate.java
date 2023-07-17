@@ -5,6 +5,4 @@ public class CarFastPredicate implements CarPredicate{
     public boolean test(Car car) {
         return car.getTopSpeed()>160;
     }
-
-
 }

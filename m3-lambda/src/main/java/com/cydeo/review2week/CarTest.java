@@ -17,6 +17,7 @@ public class CarTest {
         System.out.println(filterFastCars(carList));//[Car(make=audi, topSpeed=200, year=2008), Car(make=BMW, topSpeed=210, year=2020)]
         System.out.println(filterNewCars(carList)); //[Car(make=BMW, topSpeed=210, year=2020), Car(make=Nissan, topSpeed=150, year=2018)]
         System.out.println("-----------------------------------");
+
         // With Behaviour Parameterization
         System.out.println("Fast Cars:");
         System.out.println(filter(carList,new CarFastPredicate()));
@@ -32,18 +33,11 @@ public class CarTest {
 
         System.out.println("New Cars:");
         System.out.println(filter(carList,car -> car.getYear()>200));
-
-
-
-
-
     }
 
     // Without Behaviour Parameterization
-
     private static List<Car> filterFastCars(List<Car> cars){
         List<Car> filteredCars = new ArrayList<>();
-
         for (Car car:cars){
             if(car.getTopSpeed()>160){
                 filteredCars.add(car);
@@ -62,7 +56,6 @@ public class CarTest {
         }
         return filteredCars;
     }
-
     //***********************************************************
 
     // With Behaviour Parameterization
@@ -81,5 +74,4 @@ public class CarTest {
         }
         return filteredCars;
     }
-
 }
