@@ -63,7 +63,8 @@ public class GenericsTest {
 
     // listenin son elemanını getir
     // buradaki I herşey olabilir IT yaptım.
-                     // bunu void yapınca da olmaz
+                     // bunu void yapınca return olmaz.
+                    // return olması için 3 u de aynı olmalı
 
     public static <IT> IT getLastItem(List<IT> list){
         return list.get(list.size()-1);
