@@ -37,7 +37,14 @@ public class FunctionalInterface {
         Supplier<Double> randomValue = () -> Math.random();
         System.out.println(randomValue.get());            // 0.5487917068720444
 
+/*
 
+predicate returns boolean, method test.
+consumer returns void, method accept,
+function returns object, method apply.
+
+PREDICATE: boolean çalışır. true -false döner
+ */
 
 
 
