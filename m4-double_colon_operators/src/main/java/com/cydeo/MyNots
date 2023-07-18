@@ -1,0 +1,8 @@
+Method references => (double column ::)
+- not mandatory to use
+Method references can be seen as shorthand for lambdas calling only a
+specific method. The basic idea is that if a lambda represents “call this method
+directly”, it is best to refer to the method by name rather than by a description
+of how to call it.
+When you need a method reference, the target reference is placed before the
+delimiter :: and the name of the method is provided after it
