@@ -1,4 +1,4 @@
-package com.cydeo.task.dishTask;
+package com.cydeo.task.employeeTask;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
