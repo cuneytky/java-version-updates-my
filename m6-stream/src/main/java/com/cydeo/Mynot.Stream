@@ -1,0 +1,51 @@
+???
+*** can you please talk about stream pipeline?
+???
+- similar to asamply line. car built part to part and specific order...
+Stream is a sequence of elements from a source that supports data processing operations.
+Streams are an update to the Java API that let you manipulate collections of data in a
+declarative way.
+Stream Pipeline is the operations that run on a stream to produce a result
+=====================================================
+
+??? How Stream works?
+   stream sourse(creat stream)>intermediate operation>(terminal operation)opreation result
+    [array-collection...]       [filter-sort-map-convert...]    [result..count-sum...]
+
+*** orjianl sourse not change important!!! böylece tekrar tekrar kullanabiliriz.
+
+ kısa interview sorusu:
+        how can you create stream? explain stream pipeline?
+        => 2 şekilde stream oluşturuyoruz:
+            1- .stream()
+            2- Stream.of()
+ =====================================================
+Dosya akışı:
+1- Create stream: Create stream instance(stream oluşturma)
+2- Stream operations: intermediate operation
+3- Terminal Operation
+
+Behaviour Parameter : Why? --> OOP
+Lambda : Functional Programming
+Stream
+
+**** navigator kısayolunu öğren
+
+=====================================================
+
+???
+Interview Question: (day59 2:02)
+What is the difference between flatMap() and map() ?
+
+map() : takes Stream<T> as input and returns Stream <R> (take stream)
+
+it is mapper function produces single value for each input value.
+It is called One-To-One mapping
+
+flatMap() : takes Stream<Stream<T>> as an input and return Stream<R>. (take stream and stream)
+           It is called One-To-Many mapping
+
+Stream.of(1,2,3,4) -> [1,2,3,4]
+[[1,2],[3,4],[5,6],[7,8]]->[1,2,3,4,5,6,7,8] flatMap()
+
+=====================================================
