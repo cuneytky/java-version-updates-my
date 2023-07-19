@@ -11,14 +11,10 @@ Interview Question: (day61 1:25:00)
    oracle 3 yılda bir LTS, 6 ayda bir non-LTS
 
    =====================================================
-   ???
-   Interview Question: (day61 1:49:00)
-  * How create unmodifiable collections?
-    --> after Java9 use list.of-set.of-map.of
+???
+Int.Quest. ==> What do you Known Java version and update?
 
-
-   =====================================================
-
+ ********************************************************************
  Java 9 - big update:
    Factory Methods for Collections
    G1 Garbage Collector : onemli ekleme. J9 dan once de vardı ama farklı versiyon. J17 de hala G1 kullanılıyor.
@@ -28,6 +24,12 @@ Interview Question: (day61 1:25:00)
    Java Shell  : cmd de (terminal) jshell ile direk yazıp sonuç alabiliriz
    Private Interface Methods: J9 once yoktu
    Stream API Enhancements
+
+   =====================================================
+   ???
+   Interview Question: (day61 1:49:00)
+  * How create unmodifiable collections?
+    --> after Java9 use list.of-set.of-map.of
 
    =====================================================
     ???
@@ -56,6 +58,14 @@ Interview Question: (day61 1:25:00)
    problem1: fakat bu durumda tüm modulu eklemıs oluyoruz java 9 a kadar boyle ıdı.
    problem2: eklenen dosyada hata olunca diğer dosya fark etmiyordu. şimdi all err
 -------
+   module moudule7{
+       requires module8; ===> requires dikkat
+   }
+   .......
+   module module8{
+        exports com.cydeo.java9; ===> exports dikkat
+    }
+-------
 
 Jlink: Java command line tool that is used to generate a custom Java runtime
        environment (JRE)
@@ -70,5 +80,41 @@ what is the purpose of JRE?
     --> private method?
 
   =====================================================
+  ???
+    Interview Question: (day62 0:54:20)
+    * what is difference limit method and takeWhile method
+    --> limit method only value(mesela sorgulamadan 2 değer alır),
+        takeWhile method conditional (400 den kucukleri al gibi sart kosar)
 
+  =====================================================
+  ???
+    Interview Question: (day62 0:54:20)
+    * what is difference dropWhile method and takeWhile method
+    -->
+
+  =====================================================
+  ???
+    Interview Question: (day62 0:54:20)
+    * what is difference dropWhile method and skip method
+    --> dropWhile method use conditional
+        skip method direk atar
+
+ ****************************************************************
+Java 10 (not very big):
+Local-Variable Type Inference   : important
+orElseThrow() in Optional Class :
+Creating Unmodifiable Collections:
+Improved Container Awareness
+Application Class-Data Sharing
+
+*************************************************************
+
+Java 11
+Local-Variable for Lambda Expression
+String API Changes
+HTTP Client API
+Single File Source Code Programs
+Epsilon & ZGC : Garbage Collector
+Predicate Interface Update
+Flight Recorder
 
