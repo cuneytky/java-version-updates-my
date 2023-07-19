@@ -1,0 +1,74 @@
+???
+Interview Question: (day61 1:25:00)
+
+1-  java 10 a kadar 3 yılda bir yeni version released(piyasaya suruluyordu)
+    bundan sonra(java 10-march 2018) yılda 2 kez 6 ayda bır releases(march-september)
+
+2- With 6 months release, Oracle introduced a distinction between “non-LTS”
+   feature releases, which receive support only until the next feature release, and
+   “LTS” (long-term support) releases, which arrive every three years and receive
+   extended support
+   oracle 3 yılda bir LTS, 6 ayda bir non-LTS
+
+   =====================================================
+   ???
+   Interview Question: (day61 1:49:00)
+  * How create unmodifiable collections?
+    --> after Java9 use list.of-set.of-map.of
+
+
+   =====================================================
+
+ Java 9 - big update:
+   Factory Methods for Collections
+   G1 Garbage Collector : onemli ekleme. J9 dan once de vardı ama farklı versiyon. J17 de hala G1 kullanılıyor.
+   Compact Strings ( her char 2byte idi UTF-16 kullanılıyordu. LAtin-1 ile 1 byte oldu)
+   Modular System : biggest update(int.Quest:do you know modular system? ) java9 dan once yoktu
+   JLink
+   Java Shell  : cmd de (terminal) jshell ile direk yazıp sonuç alabiliriz
+   Private Interface Methods: J9 once yoktu
+   Stream API Enhancements
+
+   =====================================================
+    ???
+    Interview Question: (day61 2:26:10)
+    1- what is modularity in java?
+    --> modularity is encapsulation are packages.
+    2- how is it? (what is inside that module-info.java file)
+    --> module-info.java file  ( export ...java9)
+    3- how to create module-info.java file
+    --> sağ tıkla new> module-info.java
+-----
+   * 3- How to write module-info.java file?
+   module myModule {
+   // Define dependencies like
+   // What other modules required by this module
+   requires moduleA;
+   requires moduleB;
+   // What packages exported by this module?
+   // We do not wanna open other pack to outside, just interior purpose
+   exports packA;
+   }
+------
+   modularity
+   Scanner --> library de oldugundan import edebiliriz.
+   Apple isimli class olsa farklı modulden import edemiyoruz cunku bu jar. Bunu maven gibi dependencies edebiliyoruz.
+   problem1: fakat bu durumda tüm modulu eklemıs oluyoruz java 9 a kadar boyle ıdı.
+   problem2: eklenen dosyada hata olunca diğer dosya fark etmiyordu. şimdi all err
+-------
+
+Jlink: Java command line tool that is used to generate a custom Java runtime
+       environment (JRE)
+what is JRE? => compiler in the code.
+         bunun için 4300+ class çalışır 200mb kullnır.
+         basit toplama işlemi için 4kb gerekir bunu önlemke için Jlink.sadece kullanacağım class tanımlarım.
+what is the purpose of JRE?
+ =====================================================
+  ???
+    Interview Question: (day61 3:05:10)
+   * can you explain what do you put inside the interface?
+    --> private method?
+
+  =====================================================
+
+
