@@ -126,5 +126,15 @@ JMH(Java Microbenchmark Harness)
 Teeing Collector
 Shenandoah: Garbage Collector
 
-1:46 kaldım...
+*************************************************************
+Java 13
+Dynamic CDS Archives
+Socket API
+Text Blocks : "" ....."" kolay text yazarız
+ZGC Enhancement
 
+*************************************************************
+Java 14
+Switch Expressions : lamda ile kısalttı...good
+Garbage Collector Enhancements
+Records

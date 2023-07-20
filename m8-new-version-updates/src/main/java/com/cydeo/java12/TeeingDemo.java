@@ -4,7 +4,6 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
-
 public class TeeingDemo {
     public static void main(String[] args) {
 
@@ -14,8 +13,6 @@ public class TeeingDemo {
                 new Employee(3,"C",300),
                 new Employee(4,"D",400)
         );
-
-
         HashMap<String,Employee> result = employeeList.stream().collect(Collectors.teeing(
                 Collectors.maxBy(Comparator.comparing(Employee::getSalary)),
                 Collectors.minBy(Comparator.comparing(Employee::getSalary)),
@@ -25,13 +22,19 @@ public class TeeingDemo {
                     map.put("MIN",e2.get());
                     return map;
                 }
-
         ));
-
         System.out.println(result);
-
-
-
     }
-
 }
+/*
+teeing()
+It is a new static method teeing to java.util.stream.Collectors interface which
+allows to collect using two independent collectors, then merge their results using the
+supplied BiFunction.
+Every element passed to the resulting collector is processed by both downstream
+collectors, then their results are merged using the specified merge function into the
+final result.
+Please note that this function helps in performing a certain task in single steps. We
+can already perform the given task in two steps if we do not use
+the teeing() function
+ */
