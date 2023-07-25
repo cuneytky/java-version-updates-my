@@ -6,3 +6,37 @@ directly”, it is best to refer to the method by name rather than by a descript
 of how to call it.
 When you need a method reference, the target reference is placed before the
 delimiter :: and the name of the method is provided after it
+
+Recipe for Method References
+A Method reference to a static method (for example, the method parseInt of
+Integer, written Integer :: parseInt)
+A Method reference to an instance method of an arbitrary type (for example,
+the method length of a String, written String :: length)
+A method reference to an instance method of an existence object or expression
+(for example, suppose you have a local variable expensiveTransaction that
+holds an object of type Transaction, which supports an instance method
+getValue; you can write expensiveTransaction :: getValue)
+
+Lambda                   (args) -> ClassName.staticMethod(args)
+Method Reference         ClassName :: staticMethod
+
+Lambda                  (arg0,rest) -> arg0.instanceMethod(rest)
+Method Reference        ClassName :: instanceMethod
+
+Lambda                  (args) -> expr.instanceMethod(args)
+Method Reference        expr :: instanceMethod
+
+Lambda                                          Method Reference Equivalent
+(Apple apple) -> apple.getWeight()                Apple :: getWeight
+() -> Thread.currentThread().dumpStack()          Thread.currentThread() :: dumpStack
+(str, i) -> str.substring(i)                    String :: substring
+(String s) -> System.out.println(s)             System.out :: println
+
+Primitive Functional Interfaces
+Every Java type is either a reference type (Byte, Integer, etc.) or primitive type
+(byte, int, double, etc.)
+Generic parameters (Consumer<T>) can be bound only to reference types.
+As a result, when the inputs or outputs are primitives, they will be boxed
+(primitive to reference type) or unboxed (reference type to primitive)
+
+

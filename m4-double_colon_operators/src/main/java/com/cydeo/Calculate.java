@@ -4,7 +4,7 @@ package com.cydeo;
 public interface Calculate {
     void calculate(int x, int y);
     // calculate farklı farklı uygulamaları ifade ediyor.
-    // bu interface  main methodda lamda ile açacağız
+    // bu interface i  main methodda lamda ile açacağız
 
 
 }

@@ -30,6 +30,7 @@ public class CreateStream {
             1- .stream()
             2- Stream.of()
          */
+        System.out.println("--------------------------");
 
 
     }

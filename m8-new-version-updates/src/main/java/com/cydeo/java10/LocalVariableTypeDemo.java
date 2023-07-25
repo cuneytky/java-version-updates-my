@@ -40,6 +40,5 @@ Complex boilerplate code can be reduced using local variable type inference
         for(var eachNumber : numbers){
             sum = sum+eachNumber;
         }
-
     }
 }

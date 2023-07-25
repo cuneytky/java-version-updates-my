@@ -5,7 +5,6 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class CarTest {
-
     public static void main(String[] args) {
 
         //Zero Argument Constructor

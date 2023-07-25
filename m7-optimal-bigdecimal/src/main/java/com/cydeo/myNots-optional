@@ -5,3 +5,65 @@ what is purpose of the use optional?
 can you give example use  optional? (ID - car_insurance)
 
 =====================================================
+Optional
+One of the most frequently exception in java programming is NullPointerException.
+A null value often represents an absence of value which has to be handled before
+proceeding with the usual business logic, which leads to unnecessary null checks.
+To handle such boiler plate code for null check situations. Java 8 introduced
+Optional class.
+Stream API and collection methods can return Optional objects. It may or may not
+contain a non-null value.
+Optional is a final class
+
+Problems with null
+It is a source of error. NullPointerException is by far the most common
+exception in java
+It bloats your code. It worsens readability by making it necessary to fill
+your code with null checks that are often deeply nested.
+It is meaningless. It does not have any semantic meaning.
+It creates a hole in the type system. Null carries no type or other
+information, so it can be assigned to any reference type
+
+Optional Class
+Java 8 introduced a new class called java.util.Optional<T>
+The class encapsulates an optional value.
+If you know that a person may not have a car, the car variable inside
+the Person class should not be declared type Car and assigned to null
+reference when the person does not own a car, instead it should be
+type Optional<Car>
+
+The Methods of The Optional Class
+Method                  Description
+
+empty          Returns an empty Optional instance
+
+filter         If the value is present and matches the given predicate, returns this Optional; otherwise, returns the empty one
+
+flatMap         If a value is present, returns the Optional resulting from the application of the
+                    provided mapping function to it; otherwise, returns the empty Optional
+
+get             Returns the value wrapped by this Optional if present; otherwise, throws a NoSuchElementException
+
+ifPresent        If a value is present, invokes the specified consumer with the value; otherwise, does nothing
+
+ifPresentOrElse        If a value is present, performs an action with the value as input; otherwise
+                                performs a different action with no inputThe Methods of The Optional Class
+
+isPresent               Returns true if a value is present; otherwise, return false
+
+map                     If a value is present, applies the provided mapping function to it
+
+of                      Returns an Optional wrapping the given value or throws a NullPointerException if this value is null
+
+ofNullable             Returns an Optional wrapping the given value or the empty Optional if this value is null
+
+or                     If the value is present, returns the same Optional; otherwise, returns another
+                          Optional produced by the supplying function
+
+orElse            Returns the value if present; otherwise, returns the given default valueThe Methods of The Optional Class
+
+orElseGet        Returns the value if present; otherwise, returns the one provided by the given Supplier
+
+orElseThrow      Returns the value if present; otherwise, throws the exception created by the given Supplier
+
+stream          If a value is present, returns a Stream containing only it; otherwise, returns an empty Stream

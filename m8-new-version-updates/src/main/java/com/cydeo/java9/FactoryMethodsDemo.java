@@ -11,7 +11,6 @@ methods are verbose approach.
 To overcome those shortcomings, Oracle has added a couple of utility methods
 to List, Set and Map interfaces
          */
-
         //Creating unmodifiable List before Java9
         List<String> courses  = Collections.unmodifiableList(Arrays.asList("Java","Spring","Agile"));
       // courses.add("TS"); --> hata verdi
@@ -29,7 +28,5 @@ to List, Set and Map interfaces
                 Map.entry("PSP",1),
                 Map.entry("Chair",5)
         );
-
-
     }
 }

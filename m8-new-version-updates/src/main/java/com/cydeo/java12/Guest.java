@@ -11,11 +11,9 @@ public class Guest {
         this.participating = participating;
         this.participantsNumber = participantsNumber;
     }
-
     public String getName() {
         return name;
     }
-
     public boolean isParticipating() {
         return participating;
     }

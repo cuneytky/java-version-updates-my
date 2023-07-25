@@ -18,18 +18,17 @@ Int.Quest. ==> What do you Known Java version and update?
  Java 9 - big update:
    Factory Methods for Collections
    G1 Garbage Collector : onemli ekleme. J9 dan once de vardı ama farklı versiyon. J17 de hala G1 kullanılıyor.
-   Compact Strings ( her char 2byte idi UTF-16 kullanılıyordu. LAtin-1 ile 1 byte oldu)
+   Compact Strings : ( her char 2byte idi UTF-16 kullanılıyordu. LAtin-1 ile 1 byte oldu)
    Modular System : biggest update(int.Quest:do you know modular system? ) java9 dan once yoktu
    JLink
    Java Shell  : cmd de (terminal) jshell ile direk yazıp sonuç alabiliriz
    Private Interface Methods: J9 once yoktu
    Stream API Enhancements
-
    =====================================================
    ???
    Interview Question: (day61 1:49:00)
   * How create unmodifiable collections?
-    --> after Java9 use list.of-set.of-map.of
+    --> after Java9 use list.of - set.of - map.of
 
    =====================================================
     ???
@@ -66,7 +65,6 @@ Int.Quest. ==> What do you Known Java version and update?
         exports com.cydeo.java9; ===> exports dikkat
     }
 -------
-
 Jlink: Java command line tool that is used to generate a custom Java runtime
        environment (JRE)
 what is JRE? => compiler in the code.
@@ -78,28 +76,24 @@ what is the purpose of JRE?
     Interview Question: (day61 3:05:10)
    * can you explain what do you put inside the interface?
     --> private method?
-
   =====================================================
   ???
     Interview Question: (day62 0:54:20)
     * what is difference limit method and takeWhile method
     --> limit method only value(mesela sorgulamadan 2 değer alır),
         takeWhile method conditional (400 den kucukleri al gibi sart kosar)
-
   =====================================================
   ???
     Interview Question: (day62 0:54:20)
     * what is difference dropWhile method and takeWhile method
     -->
-
   =====================================================
   ???
     Interview Question: (day62 0:54:20)
     * what is difference dropWhile method and skip method
     --> dropWhile method use conditional
         skip method direk atar
-
- ****************************************************************
+ ******************************************************
 Java 10 (not very big):
 Local-Variable Type Inference   : important
 orElseThrow() in Optional Class :
@@ -107,8 +101,7 @@ Creating Unmodifiable Collections:
 Improved Container Awareness
 Application Class-Data Sharing
 
-*************************************************************
-
+****************************************************
 Java 11
 Local-Variable for Lambda Expression
 String API Changes
@@ -117,23 +110,20 @@ Single File Source Code Programs
 Epsilon & ZGC : Garbage Collector
 Predicate Interface Update
 Flight Recorder
-
-*************************************************************
+****************************************************
 Java 12
 CompactNumber format
 Comparing 2 Files
 JMH(Java Microbenchmark Harness)
 Teeing Collector
 Shenandoah: Garbage Collector
-
-*************************************************************
+***************************************************
 Java 13
 Dynamic CDS Archives
 Socket API
 Text Blocks : "" ....."" kolay text yazarız
 ZGC Enhancement
-
-*************************************************************
+**************************************************
 Java 14
 Switch Expressions : lamda ile kısalttı...good
 Garbage Collector Enhancements

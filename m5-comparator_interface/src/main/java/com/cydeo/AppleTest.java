@@ -32,9 +32,5 @@ public class AppleTest {
         inventory
                 .sort(comparing(Apple::getWeight)
                         .reversed().thenComparing(Apple::getColor));
-
-
-
-
     }
 }

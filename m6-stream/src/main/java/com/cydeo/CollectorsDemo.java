@@ -9,6 +9,14 @@ import java.util.stream.Collectors;
 
 public class CollectorsDemo {
     public static void main(String[] args) {
+        /*
+        Java Collectors
+Java Collectors is a utility class that provides many useful
+implementations of the Collector interface.
+The Collector implementation is used with the Stream.collect() method.
+The Collectors is a final class and all the methods are static that return
+the Collector instance
+         */
 
         List<Integer> numbers = Arrays.asList(3,4,5,6,6,7);
 

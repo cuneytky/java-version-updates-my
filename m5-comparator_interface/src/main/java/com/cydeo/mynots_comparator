@@ -1,0 +1,40 @@
+Comparator Interface
+It is used to sort a list of objects based on custom order.
+Custom ordering of elements is imposed by implementing
+Comparator.compare() method in the objects
+    @FunctionalInterface
+    public interface Comparator<T> {
+        int compare(T o1, T o2);
+        }
+
+COMPARATOR.COMPARE()
+It compares its two arguments for order. It returns a negative integer, zero, or a
+positive integer as the first argument is less than, equal to, or greater than the
+second.
+public int compare(Object obj1, Object obj2) {
+return -1 ; //obj1 comes before obj2
+return 1 ; //obj1 comes after obj2
+return 0 ; //obj1 and obj2 are equal
+
+COMPARETO() Method
+
+Compares this object with the specified object for order. Returns a negative
+integer, zero, or a positive integer as this object is less than, equal to, or greater
+than the specified object
+public int compareTo(Integer anotherInteger) {
+return compare(this.value, anotherInteger.value);
+}
+public static int compare(int x, int y) {
+return (x < y) ? -1 : ((x == y) ? 0 : 1);
+
+COMPARATOR.COMPARING
+Comparator.comparing static function accepts a sort key Function and returns
+a Comparator for the type which contains the sort key.
+static <T,U extends Comparable<? super U>> Comparator<T> comparing(
+Function<? super T,? extends U> keyExtractor)
+
+Reversed Order
+Comparator interface includes a default method reversed that reverses the
+ordering of a given comparator.
+inventory.sort(comparing(Apple :: getWeight).reversed());
+
